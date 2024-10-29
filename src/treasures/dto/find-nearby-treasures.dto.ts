@@ -31,7 +31,7 @@ export class FindNearbyTreasuresDto {
 
   @ApiPropertyOptional({
     description:
-      'Minimum prize value to filter treasures (whole numbers from $10 to $30)',
+      'Minimum prize value to filter treasures (whole numbers from 10 to 30)',
     example: 20,
     type: Number,
   })

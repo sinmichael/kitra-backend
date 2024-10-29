@@ -22,7 +22,7 @@ export function IsPrizeValue(validationOptions?: ValidationOptions) {
           );
         },
         defaultMessage(args: ValidationArguments) {
-          return `${args.property} must be a whole number between $10 and $30`;
+          return `${args.property} must be a whole number between 10 and 30`;
         },
       },
     });

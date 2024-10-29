@@ -84,7 +84,7 @@ Additionally, the Swagger JSON format is available at:
      - `latitude` (required, number): Latitude for the search location (e.g., 14.552036595352455).
      - `longitude` (required, number): Longitude for the search location (e.g., 121.01696118771324).
      - `distance` (required, string): Search radius in kilometers (1 or 10 only).
-     - `prizeValue` (optional, number): Minimum prize value to filter treasures (whole numbers from $10 to $30).
+     - `prizeValue` (optional, number): Minimum prize value to filter treasures (whole numbers from 10 to 30).
    - **Responses:**
      - `200`: List of nearby treasures found within the specified distance.
      - `401`: Unauthorized.
