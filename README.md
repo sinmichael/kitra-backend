@@ -60,13 +60,54 @@ Alternatively, if you prefer, an SQL file dump is included in the source: `dump-
 
 Once the server is started, the API documentation is generated using Swagger.
 
-You can access it at:
-[Swagger UI](http://localhost:3000/api/docs)
+The API documentation is generated using Swagger. You can access it at:
 
-You can also import the Swagger JSON format directly into Postman for easy testing and exploration of the API.
+- [Swagger UI](http://localhost:3000/api/docs#/)
 
-The Swagger JSON format is available at:
-[Swagger JSON](http://localhost:3000/api/docs-json)
+Additionally, the Swagger JSON format is available at:
+
+- [Swagger JSON](http://localhost:3000/api/docs-json)
+
+#### Endpoints
+
+1. **Find Nearby Treasures**
+   - **Endpoint:** `/treasures`
+   - **Method:** `GET`
+   - **Summary:** Find nearby treasures based on the provided location and filters.
+   - **Parameters:**
+     - `latitude` (required, number): Latitude for the search location (e.g., 14.552036595352455).
+     - `longitude` (required, number): Longitude for the search location (e.g., 121.01696118771324).
+     - `distance` (required, string): Search radius in kilometers (1 or 10 only).
+     - `prizeValue` (optional, number): Minimum prize value to filter treasures (whole numbers from $10 to $30).
+   - **Responses:**
+     - `200`: List of nearby treasures found within the specified distance.
+     - `401`: Unauthorized.
+
+2. **Register a New User**
+   - **Endpoint:** `/auth/register`
+   - **Method:** `POST`
+   - **Summary:** Register a new user.
+   - **Request Body:**
+     - `name` (required, string): User name.
+     - `age` (required, number): User age.
+     - `email` (required, string): User email address (e.g., user@example.com).
+     - `password` (required, string): User password (minimum length of 6).
+   - **Responses:**
+     - `201`: User successfully registered.
+     - `400`: Bad request.
+
+3. **Login a User**
+   - **Endpoint:** `/auth/login`
+   - **Method:** `POST`
+   - **Summary:** Login a user.
+   - **Request Body:**
+     - `email` (required, string): User email address (e.g., user@example.com).
+     - `password` (required, string): User password (e.g., password123).
+   - **Responses:**
+     - `200`: User successfully logged in.
+     - `401`: Invalid credentials.
+
+You can also import the Swagger JSON format directly into **Postman** for easy testing and exploration of the API.
 
 ## Key Dependencies
 Here are some of the important dependencies used in this project:
