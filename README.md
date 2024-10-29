@@ -9,6 +9,12 @@ treasure that has been collected.
 
 This backend is built using [NestJS](https://github.com/nestjs/nest), a progressive Node.js framework that provides a robust structure for building efficient, reliable, and scalable server-side applications, which under the hood runs on Express. I chose NestJS for its powerful modular architecture, built-in support for TypeScript, and extensive ecosystem of libraries and tools. It allows for better organization of code and enhances productivity by promoting best practices.
 
+## Improvements Made
+
+- Added **Register** and **Login** endpoints for user authentication.
+- User passwords are now securely hashed with a salt before being stored in the database, enhancing security.
+- `/treasures` endpoint requires authentication.
+  
 ## Prerequisites
 Make sure you have the following installed:
 
@@ -108,6 +114,9 @@ Additionally, the Swagger JSON format is available at:
      - `401`: Invalid credentials.
 
 You can also import the Swagger JSON format directly into **Postman** for easy testing and exploration of the API.
+
+## Additional Notes
+- The login credentials for the application can be found in the `Serino-Mini-Project-Data.xlsx` file.
 
 ## Key Dependencies
 Here are some of the important dependencies used in this project:
