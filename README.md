@@ -129,5 +129,5 @@ Here are some of the important dependencies used in this project:
 
 ## To-Do
 - Add unit tests for existing features.
-- Update documentation with API endpoints.
+- ~~Update documentation with API endpoints.~~
 - Refactor code to improve maintainability.
