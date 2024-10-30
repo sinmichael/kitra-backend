@@ -70,9 +70,7 @@ The API documentation is generated using Swagger. You can access it at:
 
 - [Swagger UI](http://localhost:3000/api/docs#/)
 
-Additionally, the Swagger JSON format, which can be directly imported to Postman, is available at:
-
-- [Swagger JSON](http://localhost:3000/api/docs-json)
+You can also import the [Swagger JSON](http://localhost:3000/api/docs-json) format directly into **Postman** for easy testing and exploration of the API.
 
 #### Endpoints
 
@@ -112,8 +110,6 @@ Additionally, the Swagger JSON format, which can be directly imported to Postman
    - **Responses:**
      - `200`: User successfully logged in.
      - `401`: Invalid credentials.
-
-You can also import the Swagger JSON format directly into **Postman** for easy testing and exploration of the API.
 
 ## Additional Notes
 - The login credentials for the application can be found in the `Serino-Mini-Project-Data.xlsx` file.
