@@ -70,7 +70,7 @@ The API documentation is generated using Swagger. You can access it at:
 
 - [Swagger UI](http://localhost:3000/api/docs#/)
 
-Additionally, the Swagger JSON format is available at:
+Additionally, the Swagger JSON format, which can be directly imported to Postman, is available at:
 
 - [Swagger JSON](http://localhost:3000/api/docs-json)
 
