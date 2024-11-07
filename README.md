@@ -10,7 +10,7 @@ treasure that has been collected.
 This backend is built using [NestJS](https://github.com/nestjs/nest), a progressive Node.js framework that provides a robust structure for building efficient, reliable, and scalable server-side applications, which under the hood runs on Express. I chose NestJS for its powerful modular architecture, built-in support for TypeScript, and extensive ecosystem of libraries and tools. It allows for better organization of code and enhances productivity by promoting best practices.
 
 ## Fixes
-- November 7, 2024 - Removed global prefix that caused 404 on the endpoints, originally to make an API call you will use http://localhost:3000/api/treasures, http://localhost:3000/treasures will now be used instead.
+- November 7, 2024 - Removed API global prefix. Originally to make an API call you will use http://localhost:3000/api/treasures, http://localhost:3000/treasures will now be used instead.
 
 ## Improvements Made
 
